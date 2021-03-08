@@ -1,0 +1,396 @@
+/* Master Styles*/
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Lato', sans-serif;
+}
+	.container{
+		width: 100%;
+		height: 100vh;
+		background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/paradise.jpg);
+		background-position: center;
+		background-size: cover;
+		padding-left: 8%;
+		padding-right: 8%;
+		box-sizing: border-box;
+}
+	.nav-bar{
+		height: 12%;
+		display: flex;
+		align-items: center;	
+}
+	.menu-icon{
+		width: 30px;
+		cursor: pointer;
+		margin-left: 40px;	
+}
+	nav{
+		flex: 1;
+		text-align: right;	
+}
+	nav ul li{
+		list-style: none;
+		display:inline-block;
+		margin-left: 60px;
+		color:#FFFFFF;	
+}
+	nav ul li a{
+		color:#FFFFFF;
+		text-decoration:none;
+		font-size:20px;
+}
+	.row{
+		display: flex;
+		height:70%;
+		align-items: center;	
+}	
+	.column{
+		flex-basis: 50%;
+		width:600px;
+		display:inline-block;
+		max-width:600px;
+		
+}
+	.column1{
+		flex-basis: auto;
+		max-width:600px;
+		display:inline-block;
+		width:600px;
+		height:auto;
+		
+}
+	h1{
+		color:#FFFFFF;
+		font-size:60px;	
+}
+	p{
+		color:#FFFFFF;
+		font-size:20px;
+		line-height: 20px;
+		padding-bottom:30px;	
+}
+	.email {
+		color:#ffffff; 
+		text-decoration:none; 
+		line-height:1.2em; 
+	}
+	button{
+		width: 350px;
+		color: #000000;
+		font-size:17px;
+		padding: 12px 30px;
+		background:#FFFFFF;
+		border:none;
+		border-radius:5px;
+		outline:none;
+		margin-top: 40px;
+		text-decoration:none;
+			
+}
+	.card{
+		width: 400px;
+		height: 400px;
+		display:inline-block;
+		border-radius:10px;
+		padding: 15px 25px;
+		box-sizing:border-box;
+		cursor:pointer;
+		margin:10px 15px;
+		background-position: center;
+		background-size:cover;
+		transition: transform 1s;
+		max-width:200px;
+		
+		
+		
+		
+}
+	.card1{
+		background-image: url(images/visit-ontario.png);
+}
+	.card2{
+		background-image: url(images/hot-pot-tea.png);
+}
+	.card3{
+		background-image: url(images/yoga-temple.png);
+}
+	.card4{
+		background-image: url(images/adopt-a-pet.png);
+}
+	
+	.card:hover {
+		transform:scale(1.1,1.1)
+}
+	h2{
+		vertical-align:middle;
+		color:#FFFFFF;
+		text-shadow: 0 0 5px #cccccc;
+		text-align: center;
+	
+}
+	h3{
+		color:#ffffff;	
+		font-size:40px;
+		padding-bottom:18px;
+}
+	.card p{
+		text-shadow: 0 0 15px #000000;
+		font-size:10px;
+}
+
+
+
+/* Nav Styles*/
+	.nav-wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding: 40px;
+}
+	.left-side {
+		display: flex;
+}
+	.nav-wrapper .left-side div {
+		margin-right: 20px;
+		font-size: 0.9em;
+		text-transform: uppercase;
+}
+	.nav-link-wrapper {
+		height: 22px;
+		border-bottom: 1px solid transparent;
+		transition: border-bottom 0.5s;  
+}
+	.nav-link-wrapper a {
+		color: #ffffff!important;
+		text-decoration: none;
+		transition: color 0.5s; 
+}
+	.nav-link-wrapper:hover {
+		border-bottom: 1px solid #FC02FF;
+}
+	.nav-link-wrapper a:hover {
+		color: #ffffff;
+}
+	.active-nav-link {
+		border-bottom: 1px solid #ffffff;
+}
+	.active-nav-link a {
+		color: #ffffff!important;
+}	
+	/* About page*/
+	.container-about {
+		background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/about-background.jpg);
+		width: 100%;
+		height: 100vh; 
+}
+	h4{
+		color:#FFFFFF;
+		font-size:50px;	
+}
+	.two-column-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding-top:150px;
+}
+	.profile-image-wrapper img {
+		width: 70%;
+		padding-left:100px;
+}
+	.profile-content-wrapper {
+		width:70%;
+		padding: 30px;
+		max-width:750px;
+		text-align:justify;
+		font-size:14px;
+		vertical-align: middle!important;
+
+}
+	.profile-content-wrapper h1 {
+		color: lightseagreen;
+}
+	.about-text  {
+		color:#ffffff;
+		font-size:14px;
+		line-height:1.8em;
+		font-family: 'Lato', sans-serif;
+		padding: 10px;
+}
+	.brand {
+		color: #ffffff;	 
+}
+	.profile-text{
+		color:#ffffff;
+		font-size:15px;
+		line-height: 1.3em;	
+}
+	
+
+/*Gallery page*/
+	.full-container{
+		width: 100%;
+		background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/gallery-background.jpg);
+		background-position: center;
+		background-size: cover;
+		padding-left: 8%;
+		padding-right: 8%;
+		box-sizing: border-box;
+		object-fit: contain;
+		height: 100vh; 
+		
+}
+	.full-row{
+		display:inline-block;
+		width: 100%;
+		height:90%;
+		align-items: center;
+		padding-top: 200px;	
+}
+	.gallery-column{
+		flex-basis: 100%;
+		text-align:center;
+		
+		
+}
+	.gallery-card{
+		width: 300px;
+		height: 350px;
+		display:inline-block;
+		border-radius:10px;
+		padding: 15px 25px;
+		box-sizing:border-box;
+		cursor:pointer;
+		margin:20px 15px;
+		background-position: center;
+		background-size:cover;
+		transition: transform 1s;
+		max-width: 300px;
+}
+	.gallery-card1{
+		background-image: url(images/visit-ontario.png);
+}
+	.gallery-card2{
+		background-image: url(images/hot-pot-tea.png);
+}
+	.gallery-card3{
+		background-image: url(images/yoga-temple.png);
+}
+	.gallery-card4{
+		background-image: url(images/adopt-a-pet.png);
+}
+	.gallery-card5{
+		background-image: url(images/megabits.png);
+}
+	.gallery-card6{
+		background-image: url(images/la-boutique-magnifique.png);
+}
+	
+	.gallery-card:hover {
+		transform:scale(1.1,1.1)
+}
+
+
+@media screen and (max-width: 950px) {
+	.column1{
+		width: 80%;
+		height:80%;
+		padding:0;
+	
+	
+}
+	.card {
+		width: 170px;
+		height:180px;
+		padding:0;
+}
+	h4{
+		font-size:25px;	
+}
+	.nav-bar{
+		height: 8%;
+	
+}
+.column{
+		width:70%;
+		height:auto;
+		text-align: justify;
+		display:inline-block;
+
+		
+}
+.profile-content-wrapper {
+		padding-top:15px!important;
+}
+	.profile-text {
+		font-size:12px;
+		
+}
+
+.full-container{
+	height: auto;
+	align-items: center;
+}
+.gallery-column {
+	align-items: center;
+
+}
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+	.gallery-card{
+		width: 70%;		
+}
+
+
+	.card{
+		width: 140px;
+		height: 160px;
+		margin:
+	
+}
+	.column{
+		width:50%;
+		height:auto;
+		text-align:justify;
+
+		
+}
+	.column1{
+		width:70%;
+		height:auto;
+		padding-top:10px;
+		
+}
+	h1{
+		font-size:25px;
+}
+	.profile-image-wrapper img {
+		width: 100%;
+		padding-left:20px;
+		float:left;
+	
+}
+	.profile-content-wrapper {
+		width: 70%;
+		font-size:25px;
+		padding-top:none!important;
+}
+	.profile-text  {
+		font-size:10px;
+}
+	h4{
+		font-size:18px;	
+}
+.container {
+	padding-left:2%;
+	padding-right:2%;
+	margin:4px 8px;
+}
+}
+	
+		
+		
+		
+		
+		
